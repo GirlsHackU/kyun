@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>きゅん死代行</title>
+	<link rel="stylesheet" type="text/css" href="./style.css">
+	<link rel="stylesheet" type="text/css" href="./bower_components/Honoka/dist/css/bootstrap.min.css">
+</head>
+<body>
+
+<div class="container">
+	<div class="page-header">
+		<h1>きゅん死代行</h1>
+		<span class="lead">あなたの“きゅん”、死んでも代行。</span>
+	</div>
+
+	<div class="row">
+	<!-- 入力部 -->
+		<div class="col-lg-6">
+			<div class="well bs-component">
+				
+				<form class="form-horizontal">
+					<fieldset>
+
+						<div class="form-group">
+
+							<label for="okimochi-input" class="col-lg-3 control-label">書け</label>
+							<div class="col-lg-10">
+								<textarea name="okimochi-input" class="form-control" rows="3" id="okimochi-input"></textarea>
+								<span class="help-block">ヒント：穴（あな）、壁（かべ）、崖（がけ）</span>
+							</div>
+
+						</div>
+						
+						<div class="form-group">
+
+							<div class="col-lg-10">
+								<button id="ana-button" type="" class="btn btn-success">穴</button>
+								<button id="kabe-button" type="" class="btn btn-success">壁</button>
+								<button id="gake-button" type="" class="btn btn-success">崖</button>
+								<button id="beem-button" type="" class="btn btn-success">ビーム</button>
+								<button id="haku-button" type="" class="btn btn-success">吐</button>
+								<button id="bo-button" type="" class="btn btn-success">ボ</button>
+								<button id="dead-button" type="" class="btn btn-success">死</button>
+							</div>
+
+						</div>
+
+						<div class="form-group">
+
+							<div class="col-lg-10">
+								<button id="okimochi-submit" type="" class="btn btn-warning">お気持ちを表明する</button>
+								<button id="okimochi-reset" type="reset" class="btn btn-default">テキスト削除</button>
+							</div>
+
+						</div>
+
+						<div class="form-group">
+
+							<div class="col-lg-10">
+								<label for="button-twitter" class="col-lg-6 control-label">Twitterのアイコンを使う</label>
+								<button id="button-twitter" class="btn btn-primary">認証</button>
+								<span id="twitter-icon">
+									<img data-original="" class="lazy" src="" alt="twitter-icon">
+								</span>
+								<span id="twitter-screenname"></span>
+							</div>
+
+						</div>
+
+					</fieldset>
+				</form>
+
+			</div>
+		</div>
+
+		<!-- アプリ部 -->
+		<div class="col-lg-6">
+			<div class="well bs-component">
+
+				<div id="app">
+					<!-- 画像を非同期で読み込ませる必要あり -->
+					<div>通常の様子がdefault.gifで、テキストによって様子が変化するのをgifの差し替えで表す</div>
+				</div>
+
+			</div>
+		</div>
+
+	</div>
+</div>
+
+<!-- scripts -->
+	<script src="./bower_components/jquery/dist/jquery.min.js" type="text/javascript" charset="utf-8" async defer></script>
+	<script src="./bower_components/vue/dist/vue.min.js" type="text/javascript" charset="utf-8" async defer></script>
+	<script src="./bower_components/oauth-js/dist/oauth.min.js"></script>
+	<script src="./main.js" type="text/javascript" charset="utf-8" async defer></script>
+<!-- /scripts -->
+
+</body>
+</html>
